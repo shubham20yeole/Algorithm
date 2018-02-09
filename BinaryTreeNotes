@@ -1,0 +1,32 @@
+
+QUESTION: POST ORDER ITERATIVE TRANSVERSAL:
+ANSWER:
+	If Node is null return
+	Create Stack
+	Add Node (root) to stack.
+	Assign prev to null;
+	Run while loop till stack is not empty
+		Current = stack.peek
+		if(prev == null or prev.right==current or prev.left == current) go down and add if exists
+			if left exists: push all left side to stack
+			else add all right side to stack
+			else pop stack and print current data
+		else if(current.left == prev)
+			check if right exists: if exists push it to stack
+			else print current data
+		else if(check if right exixts)
+			s.pop and then print current data
+			
+QUESTION: INORDER ITERATIVE TRANSVERSAL
+	If Node is null return
+	Create Stack
+
+	run while till node is not null and add node and all its left elements
+		stack.push node
+		node = node.left
+		
+	Run while loop till stack is not empty
+		print stack pop
+		check if node has right
+		if has right then add one right and all its left elements 
+	
